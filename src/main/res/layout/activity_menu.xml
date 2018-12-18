@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iaidobackground"
+    tools:context="com.jebu.iaidohelperapplication.MenuActivity">
+
+    <Button
+        android:id="@+id/katalistButton"
+        android:layout_width="260dp"
+        android:layout_height="66dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:text="katas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/videosButton"
+        android:layout_width="260dp"
+        android:layout_height="66dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:text="Videos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/katalistButton" />
+
+    <Button
+        android:id="@+id/trainingToolsButton"
+        android:layout_width="260dp"
+        android:layout_height="66dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:text="Training / Grading tools"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/refereeToolsButton" />
+
+    <Button
+        android:id="@+id/refereeToolsButton"
+        android:layout_width="260dp"
+        android:layout_height="66dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:text="Referee tools"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videosButton" />
+
+    <Button
+        android:id="@+id/extrasButton"
+        android:layout_width="260dp"
+        android:layout_height="66dp"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Extras"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trainingToolsButton"
+        app:layout_constraintVertical_bias="0.061" />
+</android.support.constraint.ConstraintLayout>

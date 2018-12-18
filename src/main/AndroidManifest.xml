@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jebu.iaidohelperapplication">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application android:name="com.jebu.iaidohelperapplication.KataModel"
+        android:allowBackup="true"
+        android:label="IaiKai"
+        android:icon="@drawable/appicon"
+        android:roundIcon="@mipmap/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".KataListActivity"
+            android:configChanges="orientation"
+            android:parentActivityName=".MenuActivity" ></activity>
+        <activity android:name=".KataViewActivity"
+            android:configChanges="orientation"
+            android:parentActivityName=".MenuActivity" ></activity>
+        <activity android:name=".VideoCaptureActivity"
+            android:configChanges="orientation"
+            android:parentActivityName=".MenuActivity" ></activity>
+        <activity android:name=".VideoGridActivity"
+            android:configChanges="orientation"
+            android:parentActivityName=".MenuActivity" ></activity>
+        <activity android:name=".RefereeToolsActivity"
+            android:configChanges="orientation"
+            android:parentActivityName=".MenuActivity" ></activity>
+        <activity android:name=".TrainingToolsActivity"
+            android:configChanges="orientation"
+            android:parentActivityName=".MenuActivity" ></activity>
+        <activity android:name=".ExtrasActivity"
+            android:configChanges="orientation"
+            android:parentActivityName=".MenuActivity" ></activity>
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+</manifest>

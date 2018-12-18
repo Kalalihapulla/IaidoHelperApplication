@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment
+        android:id="@+id/youtubeView"
+        android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="228dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ExpandableListView
+        android:id="@+id/gradingPointsList"
+        android:layout_width="336dp"
+        android:layout_height="207dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/youtubeView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/refreshButton"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="224dp"
+        android:background="@drawable/refreshicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gradingPointsList" />
+
+    <Button
+        android:id="@+id/captureVideoButton"
+        android:layout_width="70dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/takevideoicon"
+        app:layout_constraintStart_toEndOf="@+id/refreshButton"
+        app:layout_constraintTop_toBottomOf="@+id/gradingPointsList" />
+</android.support.constraint.ConstraintLayout>

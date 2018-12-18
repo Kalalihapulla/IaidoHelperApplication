@@ -1,0 +1,12 @@
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+
+        <!--<item name="android:windowBackground">@drawable/iaidobackground</item>-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowBackground">@color/background</item>
+
+    </style>
+
+</resources>

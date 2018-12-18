@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refereeConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/refereeKatasButton"
+        android:layout_width="71dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/kataicon"
+        app:layout_constraintStart_toEndOf="@+id/poolTimerButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/redNotes"
+        android:layout_width="319dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="#f44242"
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:text="Notes"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poolTimerButton" />
+
+    <EditText
+        android:id="@+id/whiteNotes"
+        android:layout_width="315dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:text="Notes"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startTimerButton" />
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="105dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="4dp"
+        android:text="00:00"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/startTimerButton"
+        app:layout_constraintTop_toBottomOf="@+id/redNotes" />
+
+    <Button
+        android:id="@+id/startTimerButton"
+        android:layout_width="76dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:text="Start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redNotes" />
+
+    <Button
+        android:id="@+id/semifinalsTimerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="6:00"
+        app:layout_constraintStart_toEndOf="@+id/refereeKatasButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/poolTimerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text="4:00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/resetTimerButton"
+        android:layout_width="69dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="#f44242"
+        android:text="Reset"
+        app:layout_constraintStart_toEndOf="@+id/timerText"
+        app:layout_constraintTop_toBottomOf="@+id/redNotes" />
+
+    <Button
+        android:id="@+id/getRedNotesButton"
+        android:layout_width="51dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/noteicon"
+        app:layout_constraintBottom_toBottomOf="@+id/redNotes"
+        app:layout_constraintEnd_toEndOf="@+id/redNotes"
+        app:layout_constraintTop_toTopOf="@+id/redNotes"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/getWhiteNotesButton"
+        android:layout_width="51dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/noteicon"
+        app:layout_constraintBottom_toBottomOf="@+id/whiteNotes"
+        app:layout_constraintEnd_toEndOf="@+id/whiteNotes"
+        app:layout_constraintTop_toTopOf="@+id/whiteNotes"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
